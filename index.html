@@ -5,7 +5,14 @@
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <h1>Rock Paper Scissors!</h1>
+        <h1 onload="game()">Rock Paper Scissors!</h1>
+        <p>How to play:</p>
+        <p>Choose an either rock, paper or scissors by clicking the button. Your opponent will choose one as well.</p>
+        <p>Rock beats scissors, scissors beats paper, paper beats rock.</p>
+        <button onclick="playRound('rock')">Rock</button>
+        <button onclick="playRound('paper')">Paper</button>
+        <button onclick="playRound('scissors')">Scissors</button>
+        <div id = "game-results"></div>
     </body>
     <script src="./script.js"></script>
 </html>
